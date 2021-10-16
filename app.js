@@ -9,4 +9,4 @@ app.use(
   '/proxy/work',
   createProxyMiddleware({ target: process.env.TARGET || '', changeOrigin: true })
 )
-app.listen(9000)
+app.listen(+process.env.PROT || 9000)
