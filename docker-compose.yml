@@ -1,0 +1,9 @@
+version: '3.9'
+services:
+  hero-serve:
+    build:
+      context: .
+    network_mode: host
+    container_name: proxy-serve
+    stdin_open: true
+    tty: true
