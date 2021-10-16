@@ -1,9 +1,9 @@
 version: '3.9'
 services:
   proxy-serve:
-    build:
-      context: .
-    network_mode: host
+    build: . 
+      ports:    # 指定端口映射
+      - "9000:9000"
     container_name: proxy-serve
     stdin_open: true
     tty: true
